@@ -1,0 +1,36 @@
+.call {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid var(--color-grey-300);
+	@include adaptive-value-base('padding-top', 15, 15, 1);
+	@include adaptive-value-base('padding-left', 15, 15, 1);
+	@include adaptive-value-base('border-radius', 8, 4, 1);
+	@include adaptive-value-base('font-size', 14, 10, 1);
+
+	&__icon {
+		@include adaptive-value-base('width', 24, 16, 1);
+		@include adaptive-value-base('height', 24, 16, 1);
+		@include bg;
+		background-image: url('../img/icons/phone.svg');
+		filter: invert(44%) sepia(83%) saturate(5489%) hue-rotate(1deg)
+			brightness(104%) contrast(104%);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		@include adaptive-value-base('gap', 6, 2, 1);
+	}
+
+	&__phone {
+		font-weight: var(--font-weight-medium);
+		line-height: 1;
+	}
+
+	&__subtext {
+		color: var(--color-grey-600);
+	}
+}

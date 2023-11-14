@@ -1,0 +1,30 @@
+.link {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	color: var(--color-orange-500);
+	font-weight: var(--font-weight-medium);
+	transition: color 0.3s, box-shadow 0.3s;
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		transition: stroke 0.3s;
+		stroke: var(--color-orange-500);
+	}
+
+	&:focus-visible {
+		outline: 0;
+		box-shadow: 0 0 0 2px var(--color-orange-500);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--color-orange-400);
+
+			.link__icon {
+				stroke: var(--color-orange-400);
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.button {
+	@include flex-normal;
+	padding: 25px 35px;
+	color: var(--color-white);
+	font-weight: var(--font-weight-medium);
+	line-height: 1;
+	background-color: var(--color-orange-500);
+	@include adaptive-value-base('font-size', 16, 12, 1);
+	@include adaptive-value-base('border-radius', 8, 4, 1);
+	transition: background-color 0.3s, box-shadow 0.3s;
+
+	@include mq(md) {
+		padding: 18px 20px;
+	}
+
+	&:focus-visible {
+		outline: 0;
+		box-shadow: 0 0 0 2px var(--color-orange-500);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--color-orange-400);
+		}
+	}
+}
