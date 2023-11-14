@@ -298,5 +298,43 @@
 			"</div>"
 		],
 		"description": "Snippet for select with plugin choices"
+	},
+	"link-icon": {
+		"scope": "html",
+		"prefix": "p-link-icon",
+		"body": [
+			"<a class=\"link\" href=\"#\">",
+			"   Подробнее",
+			"   <svg class=\"link__icon\" aria-hidden>",
+			"       <use xlink:href=\"img/sprite.svg#arrow\">",
+			"   </svg>",
+			"</a>"
+		]
+	},
+	"call": {
+		"scope": "html",
+		"prefix": "p-call",
+		"body": [
+			"<div class=\"call\">",
+			"   <span class=\"call__icon\" aria-hidden></span>",
+			"   <div class=\"call__content\">",
+			"       <a class=\"call__phone\" href=\"tel:+7(965)3967118\">+7 (965) - 396-71-18</a>",
+			"       <span class=\"call__subtext\">Без выходных</span>",
+			"   </div>",
+			"</div>"
+		]
+	},
+	"whatsapp": {
+		"scope": "html",
+		"prefix": "p-whatsapp",
+		"body": [
+			"<div class=\"call\">",
+			"   <span class=\"call__icon\" aria-hidden></span>",
+			"   <div class=\"call__content\">",
+			"       <a class=\"call__phone\" href=\"tel:+7(965)3967118\">+7 (965) - 396-71-18</a>",
+			"       <span class=\"call__subtext\">Без выходных</span>",
+			"   </div>",
+			"</div>"
+		]
 	}
 }
