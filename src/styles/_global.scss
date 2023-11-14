@@ -58,6 +58,7 @@ body {
 	@include adaptive-value-base('width', 130, 77, 1);
 	@include adaptive-value-base('height', 60, 35, 1);
 	background-color: var(--color-orange-500);
+	border-radius: 6px;
 
 	&:focus-visible {
 		outline: 0;
