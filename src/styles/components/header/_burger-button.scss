@@ -1,65 +1,71 @@
 .burger-button {
-	$burger-width: 30px;
-	$burger-height: 30px;
-	$burger-line-height: 2px;
+	$burger-width: 50px;
+	$burger-height: 50px;
+	$burger-line-height: 1.5px;
+	order: 1;
 
-	position: relative;
 	width: $burger-width;
 	height: $burger-height;
 	color: var(--color-black);
-
-	&::before,
-	&::after {
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: $burger-line-height;
-		background-color: currentColor;
-		transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-		content: '';
-	}
-
-	&::before {
-		top: 0;
-	}
-
-	&::after {
-		top: calc(100% - $burger-line-height);
-	}
+	background-color: var(--color-grey-150);
+	border: 1px solid var(--color-grey-300);
+	border-radius: 50%;
+	@include flex-normal;
 
 	@include mq(lg, min) {
 		display: none;
 	}
 
-	&__line {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 100%;
-		height: $burger-line-height;
-		background-color: currentColor;
-		transform: translateY(-50%);
-		transition: transform 0.3s ease-in-out;
+	@include mq(sm) {
+		width: 35px;
+		height: 35px;
 	}
 
-	&--active {
+	&__line {
+		position: relative;
+		width: 18px;
+		height: $burger-line-height;
+		background-color: currentColor;
+		transition: background-color 0.3s ease-in-out;
+
 		&::before,
 		&::after {
-			top: 50%;
+			position: absolute;
+			left: 0;
+			width: 18px;
+			height: $burger-line-height;
+			background-color: currentColor;
 			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+			content: '';
 		}
 
 		&::before {
-			transform: rotate(45deg);
+			top: -6px;
 		}
 
 		&::after {
-			transform: rotate(-45deg);
+			bottom: -6px;
 		}
+	}
 
+	&--active {
 		.burger-button__line {
-			transform: scale(0);
-			transition: transform 0.3s ease-in-out;
+			background-color: transparent;
+			transition: background-color 0.3s ease-in-out;
+
+			&::before,
+			&::after {
+				top: 50%;
+				transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
 		}
 	}
 }

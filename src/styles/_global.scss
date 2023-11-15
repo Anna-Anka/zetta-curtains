@@ -54,11 +54,16 @@ body {
 
 .logo {
 	@include flex-normal;
-	padding: 5px;
-	@include adaptive-value-base('width', 130, 77, 1);
-	@include adaptive-value-base('height', 60, 35, 1);
-	background-color: var(--color-orange-500);
-	border-radius: 6px;
+	gap: 15px;
+
+	&__link {
+		@include flex-normal;
+		@include adaptive-value-base('width', 130, 77, 1);
+		@include adaptive-value-base('height', 60, 35, 1);
+		padding: 5px;
+		background-color: var(--color-orange-500);
+		border-radius: 6px;
+	}
 
 	&:focus-visible {
 		outline: 0;
@@ -69,6 +74,10 @@ body {
 		@include adaptive-value-base('width', 80, 50, 1);
 		@include adaptive-value-base('height', 20, 12, 1);
 		object-fit: contain;
+	}
+
+	&__descr {
+		font-size: 14px;
 	}
 }
 

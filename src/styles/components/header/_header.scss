@@ -4,7 +4,7 @@
 	right: 0;
 	left: 0;
 	z-index: 2;
-	padding-left: 100px;
+	border-radius: 0 0 40px 40px;
 	box-shadow: 16px 3px 32px 0 rgba(0, 0, 0, 0.04),
 		0 0 30px 0 rgba(0, 0, 0, 0.08);
 
@@ -18,6 +18,10 @@
 .header-top {
 	padding: 10px 0;
 	background-color: var(--color-grey-150);
+
+	@include mq(lg) {
+		display: none;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -67,9 +71,9 @@
 
 .header-bottom {
 	padding: 25px 0;
-	border-radius: 0 0 40px 40px;
 
 	@include mq(sm) {
+		padding: 20px 0;
 		border-radius: 0 0 25px 25px;
 	}
 
@@ -78,7 +82,22 @@
 		gap: 20px;
 	}
 
+	.logo {
+		&__descr {
+			display: none;
+
+			@include mq(lg) {
+				display: inline-flex;
+			}
+
+			@include mq(md) {
+				display: none;
+			}
+		}
+	}
+
 	.call {
+		flex-shrink: 0;
 		gap: 8px;
 		padding-top: 12px;
 		padding-bottom: 12px;
@@ -101,32 +120,40 @@
 	}
 }
 
-.menu {
-	@include flex-normal;
-	gap: 10px;
-
-	&__link {
-		@include flex-normal;
+.header-bottom {
+	.menu {
+		display: flex;
 		gap: 10px;
-		padding: 20px 18px;
-		font-size: 15px;
-		line-height: 1;
-		text-align: center;
-		background-color: var(--color-grey-150);
-		border: 1px solid transparent;
-		border-radius: 6px;
-		transition: border-color 0.3s;
+		align-items: center;
+		overflow-x: auto;
 
-		@media (any-hover: hover) {
-			&:hover {
-				border-color: var(--color-orange-500);
+		@include mq(lg) {
+			display: none;
+		}
+
+		&__link {
+			@include flex-normal;
+			gap: 10px;
+			padding: 20px 18px;
+			font-size: 15px;
+			line-height: 1;
+			white-space: nowrap;
+			background-color: var(--color-grey-150);
+			border: 1px solid transparent;
+			border-radius: 6px;
+			transition: border-color 0.3s;
+
+			@media (any-hover: hover) {
+				&:hover {
+					border-color: var(--color-orange-500);
+				}
 			}
 		}
-	}
 
-	&__icon {
-		width: 20px;
-		height: 20px;
-		@include bg;
+		&__icon {
+			width: 20px;
+			height: 20px;
+			@include bg;
+		}
 	}
 }
