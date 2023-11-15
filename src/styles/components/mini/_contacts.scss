@@ -1,0 +1,31 @@
+.contacts {
+	&__link {
+		position: relative;
+		padding: 2px 0 2px 28px;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			transform: translateY(-50%);
+			filter: invert(31%) sepia(28%) saturate(693%) hue-rotate(57deg)
+				brightness(98%) contrast(94%);
+			content: '';
+			@include bg;
+		}
+
+		&--place {
+			&::before {
+				background-image: url('../img/icons/pin.svg');
+			}
+		}
+
+		&--email {
+			&::before {
+				background-image: url('../img/icons/email.svg');
+			}
+		}
+	}
+}

@@ -34,38 +34,9 @@
 		margin-right: auto;
 	}
 
-	&__link {
-		position: relative;
-		padding: 2px 0 2px 28px;
-
-		&::before {
-			position: absolute;
-			top: 50%;
-			left: 0;
-			width: 20px;
-			height: 20px;
-			transform: translateY(-50%);
-			filter: invert(31%) sepia(28%) saturate(693%) hue-rotate(57deg)
-				brightness(98%) contrast(94%);
-			content: '';
-			@include bg;
-		}
-
-		&--place {
-			&::before {
-				background-image: url('../img/icons/pin.svg');
-			}
-		}
-
-		&--email {
-			&::before {
-				background-image: url('../img/icons/email.svg');
-			}
-		}
-
-		&:not(:last-child) {
-			margin-right: 35px;
-		}
+	.contacts {
+		@include flex-normal;
+		gap: 35px;
 	}
 }
 
@@ -98,25 +69,6 @@
 
 	.call {
 		flex-shrink: 0;
-		gap: 8px;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		border-color: var(--color-grey-300);
-
-		&__whatsapp {
-			width: 28px;
-			height: 28px;
-
-			svg {
-				width: 100%;
-				height: 100%;
-			}
-		}
-
-		&__icon {
-			width: 20px;
-			height: 20px;
-		}
 	}
 }
 
@@ -133,10 +85,7 @@
 
 		&__link {
 			@include flex-normal;
-			gap: 10px;
 			padding: 20px 18px;
-			font-size: 15px;
-			line-height: 1;
 			white-space: nowrap;
 			background-color: var(--color-grey-150);
 			border: 1px solid transparent;

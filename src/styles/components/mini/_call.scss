@@ -10,6 +10,28 @@
 	@include adaptive-value-base('border-radius', 8, 4, 1);
 	@include adaptive-value-base('font-size', 14, 10, 1);
 
+	&--whatsapp {
+		gap: 8px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		border-color: var(--color-grey-300);
+
+		.call__whatsapp {
+			width: 28px;
+			height: 28px;
+
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.call__icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
 	&__icon {
 		@include adaptive-value-base('width', 24, 16, 1);
 		@include adaptive-value-base('height', 24, 16, 1);
