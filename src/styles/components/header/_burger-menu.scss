@@ -1,23 +1,17 @@
 .burger-menu {
-	display: flex;
-	gap: 30px;
-	align-items: center;
-	margin-right: 40px;
+	display: none;
+	background-color: var(--color-grey-150);
 
 	@include mq(lg) {
 		position: fixed;
 		top: 0;
-		right: 0;
+		display: flex;
 		width: 100%;
-		max-width: 270px;
-		margin-right: 0;
-		padding: 40px 24px;
+		padding-top: var(--header-height);
 		overflow: hidden;
-		background-color: var(--color-white);
 		transform: translateX(100%);
 		visibility: hidden;
 		transition: transform 0.5s;
-		@include flex-column-v-start;
 	}
 
 	&--active {
