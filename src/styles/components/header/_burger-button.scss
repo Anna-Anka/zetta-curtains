@@ -2,9 +2,10 @@
 	$burger-width: 50px;
 	$burger-height: 50px;
 	$burger-line-height: 2px;
-	order: 1;
 
-	width: $burger-width;
+	flex-basis: $burger-width;
+	flex-shrink: 0;
+	order: 1;
 	height: $burger-height;
 	color: var(--color-black);
 	background-color: var(--color-grey-150);
@@ -17,7 +18,7 @@
 	}
 
 	@include mq(sm) {
-		width: 35px;
+		flex-basis: 35px;
 		height: 35px;
 	}
 
