@@ -1,0 +1,112 @@
+.hero {
+	@include adaptive-value-base('padding-top', 80, 24, 1);
+	@include adaptive-value-base('padding-bottom', 120, 80, 1);
+
+	&__wrapper {
+		display: flex;
+		@include adaptive-value-base('gap', 60, 24, 1);
+
+		@include mq(lg) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		width: 100%;
+
+		@include mq(lg, min) {
+			max-width: 600px;
+		}
+	}
+
+	&__title {
+		@include adaptive-value-base('margin-bottom', 20, 5, 1);
+	}
+
+	&__text {
+		color: var(--color-grey-600);
+		line-height: 1.2;
+		@include adaptive-value-base('margin-bottom', 40, 24, 1);
+
+		@include mq(sm) {
+			margin-bottom: 0;
+		}
+
+		p {
+			&:not(:last-child) {
+				@include adaptive-value-base('margin-bottom', 15, 5, 1);
+			}
+		}
+	}
+
+	&__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		@include mq(sm) {
+			display: none;
+			flex-direction: column;
+			gap: 5px;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include mq(sm) {
+				display: flex;
+			}
+		}
+	}
+
+	&__call {
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		@include mq(sm) {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+	}
+
+	&__whatsapp {
+		@include mq(md) {
+			display: none;
+		}
+	}
+
+	&__image {
+		position: relative;
+		width: 100%;
+		max-width: 820px;
+		padding-bottom: 31.5%;
+		@include adaptive-value-base('border-radius', 20, 6, 1);
+		box-shadow: 16px 3px 32px 0 rgba(0, 0, 0, 0.04),
+			0 0 30px 0 rgba(0, 0, 0, 0.2);
+
+		@include mq(lg) {
+			max-width: 100%;
+			padding-bottom: 52%;
+		}
+	}
+
+	&__bg {
+		@include resize-img;
+		border-radius: inherit;
+	}
+
+	&__whatsapp-icon {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translateY(50%);
+
+		@include mq(sm) {
+			transform: translateY(100%);
+		}
+
+		@include mq(md, min) {
+			display: none;
+		}
+	}
+}

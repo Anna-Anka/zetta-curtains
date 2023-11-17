@@ -5,6 +5,10 @@ body {
 	font-family: var(--font-family-rubik), Arial, sans-serif;
 	line-height: 1.4;
 	background-color: var(--color-white);
+
+	@include mq(md) {
+		font-size: 14px;
+	}
 }
 
 .container {
@@ -85,8 +89,8 @@ body {
 .menu {
 	&__link {
 		display: flex;
-		align-items: center;
 		gap: 10px;
+		align-items: center;
 		padding: 2px 0;
 		font-size: 15px;
 		line-height: 1;

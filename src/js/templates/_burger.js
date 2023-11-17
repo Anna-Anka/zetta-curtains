@@ -5,7 +5,6 @@ export const burger = () => {
     const burgerButton = document.querySelector('[data-burger-button]');
     const menu = document.querySelector('[data-menu]');
     const menuLinks = document.querySelectorAll('[data-menu-link]');
-    const overlay = document.querySelector('[data-menu-overlay]');
 
     const checkClass = () => {
         if (burgerButton.classList.contains('burger-button--active')) {
@@ -22,14 +21,6 @@ export const burger = () => {
     burgerButton.addEventListener('click', () => {
         burgerButton.classList.toggle('burger-button--active');
         menu.classList.toggle('burger-menu--active');
-        overlay.classList.toggle('overlay--active');
-        checkClass();
-    });
-
-    overlay.addEventListener('click', () => {
-        burgerButton.classList.remove('burger-button--active');
-        menu.classList.remove('burger-menu--active');
-        overlay.classList.remove('overlay--active');
         checkClass();
     });
 
@@ -37,7 +28,6 @@ export const burger = () => {
         el.addEventListener('click', () => {
             burgerButton.classList.remove('burgerbutton-button--active');
             menu.classList.remove('burgerbutton-menu--active');
-            overlay.classList.remove('overlay--active');
             enableScroll();
         });
     });

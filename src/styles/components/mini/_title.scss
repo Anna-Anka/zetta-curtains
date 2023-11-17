@@ -15,4 +15,8 @@
 	&--normalcaps {
 		text-transform: none;
 	}
+
+	&__accent {
+		color: var(--color-orange-500);
+	}
 }

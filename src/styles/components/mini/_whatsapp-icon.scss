@@ -1,0 +1,40 @@
+.whatsapp-icon {
+	position: relative;
+	width: 65px;
+	height: 65px;
+	background-color: var(--color-green-300);
+	border-radius: 50%;
+	transition: background-color 0.3s, box-shadow 0.3s;
+
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 26px;
+		height: 26px;
+		background-image: url('../img/icons/whatsapp.svg');
+		transform: translate(-50%, -50%);
+		content: '';
+		@include bg;
+
+		@include mq(sm) {
+			width: 18px;
+			height: 18px;
+		}
+	}
+
+	@include mq(sm) {
+		width: 45px;
+		height: 45px;
+	}
+
+	&:focus-visible {
+		box-shadow: 0 0 0 2px var(--color-orange-500);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--color-orange-500);
+		}
+	}
+}
