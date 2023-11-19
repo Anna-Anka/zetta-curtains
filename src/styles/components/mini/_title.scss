@@ -1,7 +1,7 @@
 .title {
+	@include adaptive-value-base('font-size', 38, 20, 1);
 	font-weight: var(--font-weight-medium);
 	line-height: 1.2;
-	@include adaptive-value-base('font-size', 38, 20, 1);
 	text-transform: uppercase;
 
 	&--large {
@@ -14,6 +14,40 @@
 
 	&--normalcaps {
 		text-transform: none;
+	}
+
+	&__subtitle {
+		@include adaptive-value-base('font-size', 14, 10, 1);
+		position: relative;
+		color: var(--color-grey-600);
+		font-weight: var(--font-weight-regular);
+
+		&::before,
+		&::after {
+			position: absolute;
+			top: 50%;
+			width: 100vw;
+			height: 1px;
+			background-color: var(--color-grey-300);
+			transform: translateY(-50%);
+			content: '';
+		}
+
+		&::before {
+			left: calc(-100vw - 20px);
+
+			@include mq(lg) {
+				display: none;
+			}
+		}
+
+		&::after {
+			right: calc(-100vw - 20px);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__accent {

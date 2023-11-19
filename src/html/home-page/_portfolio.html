@@ -1,0 +1,79 @@
+<section class="portfolio">
+    <div class="container">
+        <div class="portfolio__title title">
+            <span class="title__subtitle">
+                Реализованные проекты
+            </span>
+            <h2>Портфолио</h2>
+        </div>
+        <div class="portfolio__wrapper">
+            <div class="portfolio__swiper swiper">
+                <ul class="portfolio__items swiper-wrapper">
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '1',
+                        'alt' : 'Изображение 1',
+                        'title' : '/Август 2023'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '2',
+                        'alt' : 'Изображение 2',
+                        'title' : '/Декабрь 2022'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '3',
+                        'alt' : 'Изображение 3',
+                        'title' : '/Май 2023'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '4',
+                        'alt' : 'Изображение 4',
+                        'title' : '/Март 2023'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '1',
+                        'alt' : 'Изображение 1',
+                        'title' : '/Август 2023'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '2',
+                        'alt' : 'Изображение 2',
+                        'title' : '/Декабрь 2022'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '3',
+                        'alt' : 'Изображение 3',
+                        'title' : '/Май 2023'
+                        })
+                    </li>
+                    <li class="portfolio__item swiper-slide">
+                        @include('../components/cards/_portfolio-card.html', {
+                        'img' : '4',
+                        'alt' : 'Изображение 4',
+                        'title' : '/Март 2023'
+                        })
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio__scrollbar"></div>
+            <div class="portfolio__buttons">
+                <button class="portfolio__button portfolio__button--prev swiper-button swiper-button--prev" type="button">
+                </button>
+                <button class="portfolio__button portfolio__button--next swiper-button swiper-button--next" type="button">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

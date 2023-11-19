@@ -128,3 +128,43 @@ body {
 		opacity: 1;
 	}
 }
+
+.swiper-button {
+	position: relative;
+	width: 38px;
+	height: 38px;
+	background-color: var(--color-white);
+	border: 1px solid var(--color-grey-300);
+	border-radius: 6px;
+	transition: background-color 0.3s, transition border-color 0.3s;
+
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 24px;
+		height: 24px;
+		background-image: url('../img/icons/arrow.svg');
+		transform: translate(-50%, -50%);
+		content: '';
+		@include bg;
+	}
+
+	&--next {
+		transform: rotate(180deg);
+	}
+
+	&:focus-visible {
+		border-color: var(--color-orange-500);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--color-grey-300);
+		}
+	}
+
+	@include mq(lg) {
+		display: none;
+	}
+}
