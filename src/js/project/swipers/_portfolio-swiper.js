@@ -7,13 +7,7 @@ Swiper.use([Navigation, Scrollbar, Autoplay]);
 if (document.querySelector('.portfolio__swiper')) {
     new Swiper('.portfolio__swiper', {
         speed: 800,
-
-        // autoplay: {
-        //     delay: 2000,
-        //     disableOnInteraction: false,
-        //     stopOnlastSlide: false,
-        // },
-
+        spaceBetween: 20,
         navigation: {
             nextEl: '.portfolio__button--next',
             prevEl: '.portfolio__button--prev',
