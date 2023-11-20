@@ -1,44 +1,62 @@
-<section class="contacts">
+<section class="contacts-block">
     <div class="container">
         <h2 class="sr-only">
             Контакты
         </h2>
-        <div class="contacts__wrapper">
-            <div class="contacts__map"></div>
-            <div class="contacts__info">
-                <div class="contacts__head">
-                    <h3 class="contacts__title title title--small">
+        <div class="contacts-block__wrapper">
+            <div class="contacts-block__map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/225/russia/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Россия</a><a href="https://yandex.ru/maps/213/moscow/house/rastorguyevskiy_pereulok_1/Z04YcwBgTkQBQFtvfXt3dHxmZw==/?ll=37.570718%2C55.765052&utm_medium=mapframe&utm_source=maps&z=17.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Расторгуевский переулок, 1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.570718%2C55.765052&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcyNjIwNxJM0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCg0LDRgdGC0L7RgNCz0YPQtdCy0YHQutC40Lkg0L_QtdGA0LXRg9C70L7QuiwgMSIKDWpIFkIVag9fQg%2C%2C&z=17.2" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+            <div class="contacts-block__info">
+                <div class="contacts-block__head">
+                    <h3 class="contacts-block__title title title--small">
                         Приходите в наш салон
                     </h3>
-                    <span class="contacts__subtext">
+                    <span class="contacts-block__subtext">
                         Или оставьте заявку на нашем сайте!
                     </span>
                 </div>
-                <div class="contacts__inner">
-                    <form class="form contacts__form" action="#"></form>
-                    <div class="contacts__question">
-                        <h4 class="contacts__subtitle">
+                <div class="contacts-block__inner">
+                    <form class="form contacts-block__form" action="#">
+                        <div class="form__item">
+                            <label class="sr-only" for="contacts-name">Введите ваше имя</label>
+                            <input class="form__field" id="contacts-name" name="name" type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form__item">
+                            <label class="sr-only" for="contacts-phone">Введите ваше имя</label>
+                            <input class="form__field" id="contacts-phone" name="contacts-phone" type="tel" placeholder="+7 (_ _ _ ) - _ _ _ - _ _ - _ _" required>
+                        </div>
+                        <button class="form__button button" type="submit">
+                            Оставить заявку
+                        </button>
+                        <p class="form__text">
+                            Нажимая на кнопку вы соглашаетесь с условиями 
+                            <a href="#">публичной оферты</a>
+                        </p>
+                    </form>
+                    <div class="contacts-block__question">
+                        <h4 class="contacts-block__subtitle">
                             Остались вопросы?
                         </h4>
-                        <ul class="contacts__items">
-                            <li class="contacts__item">
-                                <span class="contacts__icon" aria-hidden></span>
+                        <ul>
+                            <li class="contacts-block__item">
+                                <span class="contacts-block__icon contacts-block__icon--phone" aria-hidden></span>
                                 <div>
-                                    <a class="contacts__link" href="+7(965)3967118">
+                                    <a class="contacts-block__link" href="+7(965)3967118">
                                         +7 (965) - 396-71-18
                                     </a>
-                                    <span class="contacts__subtext">
+                                    <span class="contacts-block__subtext">
                                         Без выходных
                                     </span>
                                 </div>
                             </li>
-                            <li class="contacts__item">
-                                <span class="contacts__icon" aria-hidden></span>
+                            <li class="contacts-block__item">
+                                <span class="contacts-block__icon contacts-block__icon--pin" aria-hidden></span>
                                 <div>
-                                    <a class="contacts__link" href="#">
+                                    <a class="contacts-block__link" href="#">
                                         Расторгуевски пер. Д1
                                     </a>
-                                    <span class="contacts__subtext">
+                                    <span class="contacts-block__subtext">
                                         Салон магазина Zetta
                                     </span>
                                 </div>

@@ -1,49 +1,53 @@
 .form {
 	&__item {
 		width: 100%;
-		max-width: 400px;
-
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
-
-	&__password {
-		position: relative;
-		width: 100%;
 	}
 
 	&__field {
+		@include adaptive-value-base('font-size', 14, 10, 1);
 		width: 100%;
-		border: 1px solid grey;
-	}
+		padding: 20px;
+		color: var(--color-dark-600);
+		background-color: var(--color-grey-150);
+		border: 1px solid var(--color-grey-300);
+		border-radius: 6px;
+		outline: 0;
+		transition: border-color 0.3s;
 
-	&__show {
-		position: absolute;
-		top: 50%;
-		right: 10px;
-		width: 24px;
-		height: 24px;
-		background-image: url('../img/icons/eye.svg');
-		transform: translateY(-50%);
-		@include bg;
-
-		&::before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			width: 2px;
-			background-color: grey;
-			transform: rotate(45deg);
-			opacity: 0;
-			transition: opacity 0.3s;
-			content: '';
+		@include mq(sm) {
+			padding: 20px 16px;
 		}
 
-		&--active {
-			&::before {
-				opacity: 1;
+		&::placeholder {
+			color: var(--color-grey-600);
+			transition: color 0.3s;
+		}
+
+		&:focus-visible {
+			border-color: var(--color-orange-500);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				&::placeholder {
+					color: var(--color-dark-600);
+				}
+			}
+		}
+	}
+
+	&__text {
+		@include adaptive-value-base('font-size', 12, 8, 1);
+		color: var(--color-grey-600);
+
+		a {
+			color: var(--color-white);
+			transition: colro 0.3s;
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: var(--color-orange-500);
+				}
 			}
 		}
 	}

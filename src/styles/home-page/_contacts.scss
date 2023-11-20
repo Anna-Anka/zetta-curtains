@@ -1,11 +1,11 @@
-.contacts {
+.contacts-block {
 	@include adaptive-value-base('padding-bottom', 160, 80, 1);
 
 	&__wrapper {
 		display: flex;
 		gap: 20px;
 
-		@include mq(lg) {
+		@include mq(xl) {
 			flex-direction: column-reverse;
 		}
 	}
@@ -26,6 +26,10 @@
 			height: 100%;
 			border-radius: inherit;
 		}
+
+		iframe {
+			border: 0;
+		}
 	}
 
 	&__info {
@@ -33,6 +37,7 @@
 		@include adaptive-value-base('padding-bottom', 50, 24, 1);
 		@include adaptive-value-base('padding-right', 60, 24, 1);
 		@include adaptive-value-base('padding-left', 60, 24, 1);
+		color: var(--color-white);
 		background-color: var(--color-dark-600);
 	}
 
@@ -45,34 +50,90 @@
 	}
 
 	&__subtext {
-		color: var(--color-grey-150);
+		color: var(--color-grey-600);
 	}
 
 	&__inner {
 		display: flex;
+		gap: 16px;
+		justify-content: space-between;
+
+		@include mq(md) {
+			flex-direction: column;
+		}
 	}
 
 	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		@include mq(md, min) {
+			width: 55%;
+		}
 	}
 
 	&__question {
+		width: 100%;
+		max-width: 230px;
 	}
 
 	&__subtitle {
-	}
-
-	&__items {
+		@include adaptive-value-base('margin-bottom', 10, 5, 1);
+		font-weight: var(--font-weight-medium);
 	}
 
 	&__item {
+		@include adaptive-value-base('gap', 15, 10, 1);
+		@include adaptive-value-base('font-size', 14, 10, 1);
+		display: flex;
+
+		&:not(:last-child) {
+			@include adaptive-value-base('margin-bottom', 10, 5, 1);
+		}
 	}
 
 	&__icon {
+		@include adaptive-value-base('flex-basis', 50, 40, 1);
+		@include adaptive-value-base('height', 50, 40, 1);
+		position: relative;
+		background-color: rgba(246, 246, 246, 0.15);
+		border-radius: 5px;
+
+		&--phone {
+			&::before {
+				background-image: url('../img/icons/phone.svg');
+			}
+		}
+
+		&--pin {
+			&::before {
+				background-image: url('../img/icons/pin.svg');
+			}
+		}
+
+		&::before {
+			@include adaptive-value-base('height', 20, 16, 1);
+			@include adaptive-value-base('width', 20, 16, 1);
+			@include bg;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			filter: invert(4%) sepia(19%) saturate(4210%) hue-rotate(38deg)
+				brightness(108%) contrast(56%);
+			content: '';
+		}
 	}
 
 	&__link {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 2px;
+		}
 	}
-}
 
-.form {
+	&__subtext {
+		color: var(--color-grey-600);
+	}
 }
