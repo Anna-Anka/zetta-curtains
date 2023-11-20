@@ -1,0 +1,90 @@
+<section class="services section">
+    <div class="container">
+        <div class="services__wrapper">
+            <h2 class="services__title title">
+                Наши Услуги
+            </h2>
+            <span class="services__bg" style="background-image: url('img/home-page/services-bg.jpg');" aria-hidden> </span>
+            <div class="services__content">
+                <ul class="services__items">
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Профессиональный пошив штор',
+                        'deadline' : '7 рабочих дней',
+                        'price' : 'от 12 000 ₽',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Карнизы для штор',
+                        'deadline' : '7 рабочих дней',
+                        'price' : 'от 1 800 ₽',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Солнцезащитные системы',
+                        'deadline' : '7 рабочих дней',
+                        'price' : 'от 3 500 ₽',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Интерьерное Постельное белье',
+                        'deadline' : '10 рабочих дней',
+                        'price' : 'от 19 000 ₽',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Мягкие обои',
+                        'deadline' : 'Индивидуально',
+                        'price' : 'По договоренности',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Рестораны, отели, дома',
+                        'deadline' : 'Индивидуально',
+                        'price' : 'По договоренности',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Реставрация',
+                        'deadline' : 'Индивидуально',
+                        'price' : 'По договоренности',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Ковры ручной и машинной сборки',
+                        'deadline' : '7 рабочих дней',
+                        'price' : 'от 38 000 ₽',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Одежда сцены',
+                        'deadline' : 'Индивидуально',
+                        'price' : 'По договоренности',
+                        })
+                    </li>
+                    <li class="services__item">
+                        @include('../components/cards/_service-name.html', {
+                        'title' : 'Штофы, натяжка ткани на стены',
+                        'deadline' : 'Индивидуально',
+                        'price' : 'По договоренности',
+                        })
+                    </li>
+                </ul>
+                <a class="link" href="#">
+                    Подробнее
+                    <svg class="link__icon" aria-hidden>
+                        <use xlink:href="img/sprite.svg#arrow">
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

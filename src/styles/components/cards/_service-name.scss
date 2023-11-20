@@ -1,0 +1,33 @@
+.service-name {
+	@include adaptive-value-base('padding-top', 18, 10, 1);
+	@include adaptive-value-base('padding-bottom', 18, 10, 1);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-top: 1px solid var(--color-grey-300);
+
+	&__title {
+		width: 63%;
+		margin-right: 15px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		width: 32%;
+		color: var(--color-grey-600);
+	}
+
+	&__deadline,
+	&__price {
+		width: 50%;
+	}
+
+	&__deadline {
+		margin-right: 15px;
+	}
+
+	&__price {
+		text-align: right;
+	}
+}
