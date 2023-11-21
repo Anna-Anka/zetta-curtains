@@ -1,0 +1,28 @@
+.stage-card {
+	@include adaptive-value-base('padding', 30, 16, 1);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__bg {
+		@include bg;
+		width: 100%;
+		max-width: 130px;
+		height: 105px;
+	}
+
+	&__number {
+		color: var(--color-grey-300);
+	}
+
+	&__title {
+		font-weight: var(--font-weight-medium);
+	}
+}

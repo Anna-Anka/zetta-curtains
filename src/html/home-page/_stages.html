@@ -1,0 +1,51 @@
+<section class="stages">
+    <div class="container">
+        <div class="stages__header">
+            <h2 class="stages__title title">
+                Этапы работ
+            </h2>
+            <div class="stages__text">
+                <p>
+                    Для наших клиентов мы предлагаем полный цикл услуг по текстильному оформлению. Выбирая сотрудничество со Студией текстильного декора Zetta, вы получаете, высокое качество продукции, индивидуальный подход к потребностям клиента, а так же послепродажный сервис.
+                </p>
+            </div>
+        </div>
+        <ul class="stages__items">
+            <li class="stages__item">
+                @include('../components/cards/_stage-card.html', {
+                'img' : '1',
+                'number' : '01',
+                'title' : 'Подбор материалов и выезд на объект'
+                })
+            </li>
+            <li class="stages__item">
+                @include('../components/cards/_stage-card.html', {
+                'img' : '2',
+                'number' : '02',
+                'title' : 'Разработка дизайн проекта'
+                })
+            </li>
+            <li class="stages__item">
+                @include('../components/cards/_stage-card.html', {
+                'img' : '3',
+                'number' : '03',
+                'title' : 'Пошив изделия'
+                })
+            </li>
+            <li class="stages__item">
+                @include('../components/cards/_stage-card.html', {
+                'img' : '4',
+                'number' : '04',
+                'title' : 'Монтажные работы и навеска изделия'
+                })
+            </li>
+            <li class="stages__item">
+                @include('../components/cards/_stage-card.html', {
+                'img' : '5',
+                'number' : '05',
+                'title' : 'Гарантийное обслуживание'
+                })
+            </li>
+        </ul>
+    </div>
+</section>
