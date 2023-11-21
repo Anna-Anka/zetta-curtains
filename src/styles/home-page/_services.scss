@@ -4,7 +4,8 @@
 
 	&__title {
 		grid-area: title;
-		@include mq(lg) {
+
+		@include mq(xl) {
 			@include adaptive-value-base('margin-bottom', 40, 16, 1);
 		}
 	}
@@ -38,8 +39,4 @@
 	&__items {
 		@include adaptive-value-base('margin-bottom', 40, 16, 1);
 	}
-
-	// &__item {
-	// 	position: relative;
-	// }
 }

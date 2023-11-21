@@ -2,29 +2,42 @@
 	@include adaptive-value-base('padding-top', 18, 10, 1);
 	@include adaptive-value-base('padding-bottom', 18, 10, 1);
 	display: flex;
+	gap: 30px;
 	justify-content: space-between;
 	width: 100%;
 	border-top: 1px solid var(--color-grey-300);
 
+	@include mq(md) {
+		flex-direction: column;
+		gap: 5px;
+	}
+
 	&__title {
-		width: 63%;
-		margin-right: 15px;
+		width: 56%;
 	}
 
 	&__info {
 		display: flex;
+		gap: 15px;
 		justify-content: space-between;
-		width: 32%;
+		width: 39%;
 		color: var(--color-grey-600);
+	}
+
+	&__title,
+	&__info {
+		@include mq(lg) {
+			width: 50%;
+		}
+
+		@include mq(md) {
+			width: 100%;
+		}
 	}
 
 	&__deadline,
 	&__price {
 		width: 50%;
-	}
-
-	&__deadline {
-		margin-right: 15px;
 	}
 
 	&__price {
