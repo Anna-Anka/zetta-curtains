@@ -1,0 +1,46 @@
+.about-card {
+	@include adaptive-value-base('padding', 25, 16, 1);
+	@include adaptive-value-base('border-radius', 15, 10, 1);
+	background-color: var(--color-white);
+
+	&__icon {
+		@include adaptive-value-base('width', 64, 55, 1);
+		@include adaptive-value-base('height', 64, 55, 1);
+		position: relative;
+		margin-bottom: 15px;
+		background-color: var(--color-grey-150);
+		border-radius: 4px;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			content: '';
+			@include bg;
+			@include adaptive-value-base('width', 34, 26, 1);
+			@include adaptive-value-base('height', 34, 26, 1);
+		}
+	}
+
+	&__accent,
+	&__title {
+		margin-bottom: 5px;
+	}
+
+	&__accent {
+		color: var(--color-orange-500);
+	}
+
+	&__title {
+		font-weight: var(--font-weight-medium);
+	}
+
+	&__text {
+		p {
+			&:not(:last-child) {
+				@include adaptive-value-base('margin-bottom', 15, 5, 1);
+			}
+		}
+	}
+}

@@ -20,6 +20,7 @@
 	&__subtitle {
 		@include adaptive-value-base('font-size', 14, 10, 1);
 		position: relative;
+		display: inline-block;
 		color: var(--color-grey-600);
 		font-weight: var(--font-weight-regular);
 

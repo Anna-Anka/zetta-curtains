@@ -1,0 +1,11 @@
+.about {
+	@include adaptive-value-base('padding-top', 100, 40, 1);
+	@include adaptive-value-base('padding-bottom', 100, 40, 1);
+	background-color: var(--color-grey-150);
+
+	&__items {
+	}
+
+	&__item {
+	}
+}

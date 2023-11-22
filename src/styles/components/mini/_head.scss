@@ -1,0 +1,26 @@
+.head {
+	@include adaptive-value-base('margin-bottom', 40, 24, 1);
+
+	@include mq(lg, min) {
+		width: 100%;
+		max-width: 730px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__title {
+		@include adaptive-value-base('margin-bottom', 10, 5, 1);
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		p {
+			&:not(:last-child) {
+				@include adaptive-value-base('margin-bottom', 15, 5, 1);
+			}
+		}
+	}
+}
