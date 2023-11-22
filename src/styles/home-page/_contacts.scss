@@ -49,10 +49,6 @@
 		@include adaptive-value-base('margin-bottom', 15, 5, 1);
 	}
 
-	&__subtext {
-		color: var(--color-grey-600);
-	}
-
 	&__inner {
 		display: flex;
 		gap: 16px;
@@ -131,9 +127,5 @@
 		&:not(:last-child) {
 			margin-bottom: 2px;
 		}
-	}
-
-	&__subtext {
-		color: var(--color-grey-600);
 	}
 }

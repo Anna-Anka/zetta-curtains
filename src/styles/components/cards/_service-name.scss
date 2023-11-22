@@ -14,6 +14,7 @@
 
 	&__title {
 		width: 56%;
+		color: var(--color-dark-600);
 	}
 
 	&__info {
@@ -21,7 +22,6 @@
 		gap: 15px;
 		justify-content: space-between;
 		width: 39%;
-		color: var(--color-grey-600);
 	}
 
 	&__title,

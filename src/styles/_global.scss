@@ -1,5 +1,5 @@
 body {
-	color: var(--color-dark-600);
+	color: var(--color-grey-600);
 	font-weight: var(--font-weight-regular);
 	font-size: 16px;
 	font-family: var(--font-family-rubik), Arial, sans-serif;
@@ -54,36 +54,6 @@ body {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-}
-
-.logo {
-	@include flex-normal;
-	gap: 15px;
-
-	&__link {
-		@include flex-normal;
-		@include adaptive-value-base('width', 130, 77, 1);
-		@include adaptive-value-base('height', 60, 35, 1);
-		padding: 5px;
-		background-color: var(--color-orange-500);
-		border-radius: 6px;
-	}
-
-	&:focus-visible {
-		outline: 0;
-		box-shadow: 0 0 0 2px var(--color-orange-500);
-	}
-
-	&__img {
-		@include adaptive-value-base('width', 80, 50, 1);
-		@include adaptive-value-base('height', 20, 12, 1);
-		object-fit: contain;
-	}
-
-	&__descr {
-		max-width: 150px;
-		@include adaptive-value-base('font-size', 14, 10, 1);
-	}
 }
 
 .menu {

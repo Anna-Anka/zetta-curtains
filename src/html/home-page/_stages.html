@@ -10,42 +10,44 @@
                 </p>
             </div>
         </div>
-        <ul class="stages__items">
-            <li class="stages__item">
-                @include('../components/cards/_stage-card.html', {
-                'img' : '1',
-                'number' : '01',
-                'title' : 'Подбор материалов и выезд на объект'
-                })
-            </li>
-            <li class="stages__item">
-                @include('../components/cards/_stage-card.html', {
-                'img' : '2',
-                'number' : '02',
-                'title' : 'Разработка дизайн проекта'
-                })
-            </li>
-            <li class="stages__item">
-                @include('../components/cards/_stage-card.html', {
-                'img' : '3',
-                'number' : '03',
-                'title' : 'Пошив изделия'
-                })
-            </li>
-            <li class="stages__item">
-                @include('../components/cards/_stage-card.html', {
-                'img' : '4',
-                'number' : '04',
-                'title' : 'Монтажные работы и навеска изделия'
-                })
-            </li>
-            <li class="stages__item">
-                @include('../components/cards/_stage-card.html', {
-                'img' : '5',
-                'number' : '05',
-                'title' : 'Гарантийное обслуживание'
-                })
-            </li>
-        </ul>
+        <div class="stages__wrapper">
+            <ul class="stages__items">
+                <li class="stages__item">
+                    @include('../components/cards/_stage-card.html', {
+                    'img' : '1',
+                    'number' : '01',
+                    'title' : 'Подбор материалов и выезд на объект'
+                    })
+                </li>
+                <li class="stages__item">
+                    @include('../components/cards/_stage-card.html', {
+                    'img' : '2',
+                    'number' : '02',
+                    'title' : 'Разработка дизайн проекта'
+                    })
+                </li>
+                <li class="stages__item">
+                    @include('../components/cards/_stage-card.html', {
+                    'img' : '3',
+                    'number' : '03',
+                    'title' : 'Пошив изделия'
+                    })
+                </li>
+                <li class="stages__item">
+                    @include('../components/cards/_stage-card.html', {
+                    'img' : '4',
+                    'number' : '04',
+                    'title' : 'Монтажные работы и навеска изделия'
+                    })
+                </li>
+                <li class="stages__item">
+                    @include('../components/cards/_stage-card.html', {
+                    'img' : '5',
+                    'number' : '05',
+                    'title' : 'Гарантийное обслуживание'
+                    })
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
