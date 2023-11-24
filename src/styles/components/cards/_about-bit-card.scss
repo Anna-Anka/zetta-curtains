@@ -1,0 +1,29 @@
+.bit-card {
+	@include adaptive-value-base('border-radius', 15, 8, 1);
+	@include adaptive-value-base('padding', 30, 16, 1);
+	padding-bottom: 0;
+	background-color: var(--color-grey-150);
+
+	&--black {
+		background-color: var(--color-dark-600);
+	}
+
+	&--accent {
+		background-image: linear-gradient(152deg, #ff5b01 0, #ffbc46 100%);
+	}
+
+	&__title {
+		@include adaptive-value-base('margin-bottom', 15, 5, 1);
+	}
+
+	&__text {
+		p {
+			&:not(:last-child) {
+				@include adaptive-value-base('margin-bottom', 15, 5, 1);
+			}
+		}
+	}
+
+	&__bg {
+	}
+}

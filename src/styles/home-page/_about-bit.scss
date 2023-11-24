@@ -1,0 +1,19 @@
+.about-bit {
+	@include adaptive-value-base('padding-top', 120, 80, 1);
+	@include adaptive-value-base('padding-bottom', 120, 80, 1);
+
+	.container {
+		@include mq(lg, min) {
+			width: 74.5%;
+		}
+	}
+
+	&__items {
+		gap: 20px;
+	}
+
+	&__item {
+		flex-shrink: 0;
+		width: 32%;
+	}
+}
