@@ -3,9 +3,32 @@
 	@include adaptive-value-base('padding-bottom', 100, 40, 1);
 	background-color: var(--color-grey-150);
 
+	.container {
+		@include mq(lg) {
+			padding-right: 0;
+		}
+	}
+
+	&__head {
+		@include mq(lg) {
+			padding-right: 20px;
+		}
+	}
+
 	&__items {
+		gap: 20px;
 	}
 
 	&__item {
+		flex-shrink: 0;
+		width: 24%;
+
+		@include mq(lg) {
+			width: 48%;
+		}
+
+		@include mq(sm) {
+			width: 95%;
+		}
 	}
 }

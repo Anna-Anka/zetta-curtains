@@ -79,6 +79,12 @@ body {
 	}
 }
 
+.content {
+	display: flex;
+	overflow-x: auto;
+	@include adaptive-value-base('padding-bottom', 30, 24, 1);
+}
+
 .swiper-slide {
 	box-sizing: border-box;
 }
