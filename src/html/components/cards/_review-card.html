@@ -1,0 +1,13 @@
+<article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/@ava.avif" type="image/avif">
+            <source srcset="img/avatars/@ava.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/@ava.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">@name</span>
+    </div>
+    <div class="review-card__text">
+        @for (var i = 0; i < text.length; i++) { <p> `+text[i]+` </p> }
+    </div>
+</article>
