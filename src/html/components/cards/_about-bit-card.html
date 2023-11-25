@@ -1,15 +1,19 @@
 <article class="@class">
-    <h3 class="bit-card__title title title--small">@title</h3>
-    <div class="bit-card__text">
-        @for (var i = 0; i < text.length; i++) { <p> `+text[i]+` </p> }
+    <div class="bit-card__content">
+        <h3 class="bit-card__title title title--small">@title</h3>
+        <div class="bit-card__text">
+            @for (var i = 0; i < text.length; i++) { <p> `+text[i]+` </p> }
+        </div>
+        @if ( typeof link !== 'undefined' && link ) {
+        <a class="link" href="#">
+            @link
+            <svg class="link__icon" aria-hidden>
+                <use xlink:href="img/sprite.svg#arrow">
+            </svg>
+        </a>
+        }
     </div>
-    @if ( typeof link !== 'undefined' && link ) {
-    <a class="link" href="#">
-        @link
-        <svg class="link__icon" aria-hidden>
-            <use xlink:href="img/sprite.svg#arrow">
-        </svg>
-    </a>
-    }
-    <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/@bg.svg');" aria-hidden> </span>
+    <div class="bit-card__image">
+        <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/@bg.svg');" aria-hidden> </span>
+    </div>
 </article>

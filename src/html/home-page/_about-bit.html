@@ -1,39 +1,41 @@
 <section class="about-bit">
     <div class="container">
-        <div class="head">
-            <div class="head__title title">
-                <span class="head__subtitle title__subtitle">
-                    Дополнительные преимущества
-                </span>
-                <h2>Еще немного о компании</h2>
+        <div class="about-bit__wrapper">
+            <div class="head">
+                <div class="head__title title">
+                    <span class="head__subtitle title__subtitle">
+                        Дополнительные преимущества
+                    </span>
+                    <h2>Еще немного о компании</h2>
+                </div>
             </div>
+            <ul class="content about-bit__items">
+                <li class="about-bit__item">
+                    @include('../components/cards/_about-bit-card.html', {
+                    'class' : 'bit-card bit-card--normal',
+                    'title' : 'Собственное производство',
+                    'text' : ['Вы не ждете неделями свой заказ потому что мы не посредники. У нас свой собственный пошивочный цех с современным оборудованием, которым очень гордимся: его мощности хватает на одновременное изготовление тридцати индивидуальных проектов элитных штор на заказ.'],
+                    'bg' : '1'
+                    })
+                </li>
+                <li class="about-bit__item">
+                    @include('../components/cards/_about-bit-card.html', {
+                    'class' : 'bit-card bit-card--black',
+                    'title' : 'Выезд дизайнера',
+                    'text' : ['Дизайнер приедет к вам с согласованными образцами тканей и карнизов, разной ценовой категорией. Произведет все необходимые замеры. Предложит варианты оформления ваших окон, которые идеально подойдут к вашему интерьеру, а если это необходимо сделает и эскиз.'],
+                    'bg' : '2'
+                    })
+                </li>
+                <li class="about-bit__item">
+                    @include('../components/cards/_about-bit-card.html', {
+                    'class' : 'bit-card bit-card--accent',
+                    'title' : 'Салон в центре Москвы',
+                    'text' : ['У нас удобное расположение — всего в 8 минутах ходьбы от станции метро 1905 года.'],
+                    'link' : 'Подробнее',
+                    'bg' : '3'
+                    })
+                </li>
+            </ul>
         </div>
-        <ul class="content about-bit__items">
-            <li class="about-bit__item">
-                @include('../components/cards/_about-bit-card.html', {
-                'class' : 'bit-card',
-                'title' : 'Собственное производство',
-                'text' : ['Вы не ждете неделями свой заказ потому что мы не посредники. У нас свой собственный пошивочный цех с современным оборудованием, которым очень гордимся: его мощности хватает на одновременное изготовление тридцати индивидуальных проектов элитных штор на заказ.'],
-                'bg' : '1'
-                })
-            </li>
-            <li class="about-bit__item">
-                @include('../components/cards/_about-bit-card.html', {
-                'class' : 'bit-card bit-card--black',
-                'title' : 'Выезд дизайнера',
-                'text' : ['Дизайнер приедет к вам с согласованными образцами тканей и карнизов, разной ценовой категорией. Произведет все необходимые замеры. Предложит варианты оформления ваших окон, которые идеально подойдут к вашему интерьеру, а если это необходимо сделает и эскиз.'],
-                'bg' : '2'
-                })
-            </li>
-            <li class="about-bit__item">
-                @include('../components/cards/_about-bit-card.html', {
-                'class' : 'bit-card bit-card--accent',
-                'title' : 'Салон в центре Москвы',
-                'text' : ['У нас удобное расположение — всего в 8 минутах ходьбы от станции метро 1905 года.'],
-                'link' : 'Подробнее',
-                'bg' : '1'
-                })
-            </li>
-        </ul>
     </div>
 </section>

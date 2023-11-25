@@ -3,8 +3,23 @@
 	@include adaptive-value-base('padding-bottom', 120, 80, 1);
 
 	.container {
-		@include mq(lg, min) {
+		@include mq(lg) {
+			padding-right: 0;
+		}
+	}
+
+	&__wrapper {
+		@include mq(xl, min) {
 			width: 74.5%;
+			margin-left: auto;
+		}
+	}
+
+	.head {
+		max-width: 100%;
+
+		@include mq(lg) {
+			padding-right: 20px;
 		}
 	}
 
@@ -14,6 +29,14 @@
 
 	&__item {
 		flex-shrink: 0;
-		width: 32%;
+		width: 31.5%;
+
+		@include mq(lg) {
+			width: 46%;
+		}
+
+		@include mq(md) {
+			width: 94%;
+		}
 	}
 }
