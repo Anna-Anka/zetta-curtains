@@ -1,5 +1,3 @@
-import { burger } from './templates/_burger';
-import './utils/_header-height';
-import './libs/_inputmask';
-
-burger();
+import './includes/_utils';
+import './includes/_libs';
+import './includes/_templates';
