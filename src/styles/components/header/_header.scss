@@ -65,7 +65,7 @@
 
 	&__navigation {
 		@include flex-normal(center, space-between);
-		gap: 20px;
+		@include adaptive-value-base('gap', 20, 10, 1);
 	}
 
 	.logo {
@@ -80,10 +80,32 @@
 				display: none;
 			}
 		}
+
+		@include mq(lg) {
+			margin-right: auto;
+		}
 	}
 
 	.call {
 		flex-shrink: 0;
+
+		@include mq(sm) {
+			display: none;
+		}
+
+		&__whatsapp {
+			@include mq(lg) {
+				display: none;
+			}
+		}
+	}
+
+	.contacts-icon {
+		display: none;
+
+		@include mq(lg) {
+			display: flex;
+		}
 	}
 }
 
