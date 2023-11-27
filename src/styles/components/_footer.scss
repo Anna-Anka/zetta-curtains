@@ -55,6 +55,24 @@
 		}
 	}
 
+	.contacts-icon {
+		display: flex;
+		align-items: center;
+
+		&__link {
+			flex-shrink: 0;
+		}
+
+		.navigation__link {
+			padding: 20px 43px;
+
+			@include mq(md) {
+				width: 100%;
+				padding: 20px;
+			}
+		}
+	}
+
 	.menu {
 		gap: 12px;
 
@@ -120,6 +138,14 @@
 		&__top {
 			@include mq(sm) {
 				padding-top: 16px;
+			}
+		}
+	}
+
+	.call {
+		&__whatsapp {
+			@include mq(lg) {
+				display: none;
 			}
 		}
 	}

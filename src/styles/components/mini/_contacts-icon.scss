@@ -36,5 +36,17 @@
 				background-image: url('../img/icons/whatsapp.svg');
 			}
 		}
+
+		&--border {
+			&.contacts-icon__link--phone {
+				background-color: transparent;
+				border: 1px solid var(--color-orange-500);
+
+				&::before {
+					filter: invert(27%) sepia(95%) saturate(5898%) hue-rotate(358deg)
+						brightness(99%) contrast(102%);
+				}
+			}
+		}
 	}
 }
