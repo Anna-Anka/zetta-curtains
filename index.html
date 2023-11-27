@@ -28,7 +28,7 @@
                 <div class="header-top__wrapper">
                     <span class="header-top__name">Студия текстильного декора</span>
                     <div class="contacts">
-                        <a class="contacts__link contacts__link--place" href="#">Расторгуевски пер. Д1</a>
+                        <span class="contacts__link contacts__link--place">Расторгуевски пер. Д1</span>
                         <a class="contacts__link contacts__link--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
                     </div>
                 </div>
@@ -108,6 +108,18 @@
                             <span class="call__subtext">Без выходных</span>
                         </div>
                     </div>
+                    <ul class="contacts-icon">
+                        <li class="contacts-icon__item">
+                            <a class="contacts-icon__link contacts-icon__link--phone" href="tel:+7(965)3967118">
+                                <span class="sr-only">+7 (965) - 396-71-18</span>
+                            </a>
+                        </li>
+                        <li class="contacts-icon__item">
+                            <a class="contacts-icon__link contacts-icon__link--whatsapp" href="#">
+                                <span class="sr-only">whatsapp</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -183,7 +195,26 @@
         </div>
     </nav>
 </header>
-
+<button class="modal-thank" data-graph-path="modal-thank" type="button" style="display: none;"></button>
+<div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-thank">
+        <div class="graph-modal__box">
+            <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__wrapper">
+                <span class="graph-modal__title title title--small">
+                    <span class="title__accent">Спасибо</span>
+                    за заявку
+                </span>
+                <div class="graph-modal__text">
+                    <p>В ближайшее время мы обработаем данные и свяжемся с вами!</p>
+                </div>
+                <button class="button graph-modal__btn js-modal-close" type="button">
+                    Отлично!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <main class="main">
     <section class="hero">
@@ -335,7 +366,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="portfolio__scrollbar"></div>
+            <div class="portfolio__scrollbar swiper-scrollbar"></div>
             <div class="portfolio__buttons">
                 <button class="portfolio__button portfolio__button--prev swiper-button swiper-button--prev" type="button">
                 </button>
@@ -582,53 +613,349 @@
 </section>
     <section class="about-bit">
     <div class="container">
-        <div class="head">
+        <div class="about-bit__wrapper">
+            <div class="head">
+                <div class="head__title title">
+                    <span class="head__subtitle title__subtitle">
+                        Дополнительные преимущества
+                    </span>
+                    <h2>Еще немного о компании</h2>
+                </div>
+            </div>
+            <ul class="content about-bit__items">
+                <li class="about-bit__item">
+                    <article class="bit-card bit-card--normal">
+    <div class="bit-card__content">
+        <h3 class="bit-card__title title title--small">Собственное производство</h3>
+        <div class="bit-card__text">
+             <p> Вы не ждете неделями свой заказ потому что мы не посредники. У нас свой собственный пошивочный цех с современным оборудованием, которым очень гордимся: его мощности хватает на одновременное изготовление тридцати индивидуальных проектов элитных штор на заказ. </p> 
+        </div>
+        
+    </div>
+    <div class="bit-card__image">
+        <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/1.svg');" aria-hidden> </span>
+    </div>
+</article>
+                </li>
+                <li class="about-bit__item">
+                    <article class="bit-card bit-card--black">
+    <div class="bit-card__content">
+        <h3 class="bit-card__title title title--small">Выезд дизайнера</h3>
+        <div class="bit-card__text">
+             <p> Дизайнер приедет к вам с согласованными образцами тканей и карнизов, разной ценовой категорией. Произведет все необходимые замеры. Предложит варианты оформления ваших окон, которые идеально подойдут к вашему интерьеру, а если это необходимо сделает и эскиз. </p> 
+        </div>
+        
+    </div>
+    <div class="bit-card__image">
+        <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/2.svg');" aria-hidden> </span>
+    </div>
+</article>
+                </li>
+                <li class="about-bit__item">
+                    <article class="bit-card bit-card--accent">
+    <div class="bit-card__content">
+        <h3 class="bit-card__title title title--small">Салон в центре Москвы</h3>
+        <div class="bit-card__text">
+             <p> У нас удобное расположение — всего в 8 минутах ходьбы от станции метро 1905 года. </p> 
+        </div>
+        
+        <a class="link" href="#">
+            Подробнее
+            <svg class="link__icon" aria-hidden>
+                <use xlink:href="img/sprite.svg#arrow">
+            </svg>
+        </a>
+        
+    </div>
+    <div class="bit-card__image">
+        <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/3.svg');" aria-hidden> </span>
+    </div>
+</article>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <section class="trust">
+    <div class="container">
+        <div class="trust__head head">
             <div class="head__title title">
                 <span class="head__subtitle title__subtitle">
-                    Дополнительные преимущества
+                    Отзывы
                 </span>
-                <h2>Еще немного о компании</h2>
+                <h2>Нам доверяют</h2>
             </div>
         </div>
-        <ul class="content about-bit__items">
-            <li class="about-bit__item">
-                <article class="bit-card">
-    <h3 class="bit-card__title title title--small">Собственное производство</h3>
-    <div class="bit-card__text">
-         <p> Вы не ждете неделями свой заказ потому что мы не посредники. У нас свой собственный пошивочный цех с современным оборудованием, которым очень гордимся: его мощности хватает на одновременное изготовление тридцати индивидуальных проектов элитных штор на заказ. </p> 
+        <div class="trust__wrapper">
+            <div class="tabs" data-tabs="tab">
+                <ul class="tabs__nav">
+                    <li class="tabs__nav-item">
+                        <button class="tabs__nav-btn" type="button">Отзывы</button>
+                    </li>
+                    <li class="tabs__nav-item">
+                        <button class="tabs__nav-btn" type="button">Благодарности</button>
+                    </li>
+                </ul>
+                <div class="tabs__content">
+                    <div class="tabs__panel trust-reviews">
+                        <div class="trust__swiper swiper">
+                            <ul class="trust__items swiper-wrapper">
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/1.avif" type="image/avif">
+            <source srcset="img/avatars/1.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/1.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Юлия, Москва</span>
     </div>
-    
-    <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/1.svg');" aria-hidden> </span>
+    <div class="review-card__text">
+         <p> Застройщик подарил мне золотую карту, и перед началом ремонта я решила посмотреть, кто какие скидки по этой карте предоставляет. Начала с кухонь и нашла Зетту. Открыла сайт, увидела бирюзовую Марию и влюбилась, это была моя мечта. Застройщик обещал, что скидка будет 25%. В процессе общения с менеджерами оказалось, со скидка будет </p> 
+    </div>
 </article>
-            </li>
-            <li class="about-bit__item">
-                <article class="bit-card bit-card--black">
-    <h3 class="bit-card__title title title--small">Выезд дизайнера</h3>
-    <div class="bit-card__text">
-         <p> Дизайнер приедет к вам с согласованными образцами тканей и карнизов, разной ценовой категорией. Произведет все необходимые замеры. Предложит варианты оформления ваших окон, которые идеально подойдут к вашему интерьеру, а если это необходимо сделает и эскиз. </p> 
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/2.avif" type="image/avif">
+            <source srcset="img/avatars/2.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/2.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Алина, МО</span>
     </div>
-    
-    <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/2.svg');" aria-hidden> </span>
+    <div class="review-card__text">
+         <p> Все отлично! Спасибо, обратися еще в компанию Zetta! Настоящие специалисты и знатоки своего дела. Спасибо ребята! Не на радоуемся новым шторам. </p> 
+    </div>
 </article>
-            </li>
-            <li class="about-bit__item">
-                <article class="bit-card bit-card--accent">
-    <h3 class="bit-card__title title title--small">Салон в центре Москвы</h3>
-    <div class="bit-card__text">
-         <p> У нас удобное расположение — всего в 8 минутах ходьбы от станции метро 1905 года. </p> 
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/3.avif" type="image/avif">
+            <source srcset="img/avatars/3.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/3.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Василий, Москва</span>
     </div>
-    
-    <a class="link" href="#">
-        Подробнее
-        <svg class="link__icon" aria-hidden>
-            <use xlink:href="img/sprite.svg#arrow">
-        </svg>
+    <div class="review-card__text">
+         <p> Застройщик подарил мне золотую карту, и перед началом ремонта я решила посмотреть, кто какие скидки по этой карте предоставляет. Начала с кухонь и нашла Зетту. Открыла сайт, увидела бирюзовую Марию и влюбилась, это была моя мечта. Застройщик обещал, что скидка будет 25%. В процессе общения с менеджерами оказалось, со скидка будет </p> 
+    </div>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/4.avif" type="image/avif">
+            <source srcset="img/avatars/4.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/4.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Дмитрий, Москва</span>
+    </div>
+    <div class="review-card__text">
+         <p> Застройщик подарил мне золотую карту, и перед началом ремонта я решила посмотреть, кто какие скидки по этой карте предоставляет. Начала с кухонь и нашла Зетту. Открыла сайт, увидела бирюзовую Марию и влюбилась, это была моя мечта. Застройщик обещал, что скидка будет 25%. В процессе общения с менеджерами оказалось, со скидка будет </p> 
+    </div>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/1.avif" type="image/avif">
+            <source srcset="img/avatars/1.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/1.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Юлия, Москва</span>
+    </div>
+    <div class="review-card__text">
+         <p> Застройщик подарил мне золотую карту, и перед началом ремонта я решила посмотреть, кто какие скидки по этой карте предоставляет. Начала с кухонь и нашла Зетту. Открыла сайт, увидела бирюзовую Марию и влюбилась, это была моя мечта. Застройщик обещал, что скидка будет 25%. В процессе общения с менеджерами оказалось, со скидка будет </p> 
+    </div>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/2.avif" type="image/avif">
+            <source srcset="img/avatars/2.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/2.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Алина, МО</span>
+    </div>
+    <div class="review-card__text">
+         <p> Все отлично! Спасибо, обратися еще в компанию Zetta! Настоящие специалисты и знатоки своего дела. Спасибо ребята! Не на радоуемся новым шторам. </p> 
+    </div>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/3.avif" type="image/avif">
+            <source srcset="img/avatars/3.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/3.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Василий, Москва</span>
+    </div>
+    <div class="review-card__text">
+         <p> Застройщик подарил мне золотую карту, и перед началом ремонта я решила посмотреть, кто какие скидки по этой карте предоставляет. Начала с кухонь и нашла Зетту. Открыла сайт, увидела бирюзовую Марию и влюбилась, это была моя мечта. Застройщик обещал, что скидка будет 25%. В процессе общения с менеджерами оказалось, со скидка будет </p> 
+    </div>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="review-card">
+    <div class="review-card__header">
+        <picture>
+            <source srcset="img/avatars/4.avif" type="image/avif">
+            <source srcset="img/avatars/4.webp" type="image/webp">
+            <img class="review-card__ava" src="img/avatars/4.png" alt="@alt" width="65" height="65" loading="lazy">
+        </picture>
+        <span class="review-card__name">Дмитрий, Москва</span>
+    </div>
+    <div class="review-card__text">
+         <p> Застройщик подарил мне золотую карту, и перед началом ремонта я решила посмотреть, кто какие скидки по этой карте предоставляет. Начала с кухонь и нашла Зетту. Открыла сайт, увидела бирюзовую Марию и влюбилась, это была моя мечта. Застройщик обещал, что скидка будет 25%. В процессе общения с менеджерами оказалось, со скидка будет </p> 
+    </div>
+</article>
+                                </li>
+                            </ul>
+                            <div class="trust__scrollbar swiper-scrollbar"></div>
+                            <div class="trust__buttons">
+                                <button class="trust__button trust__button--prev swiper-button swiper-button--prev" type="button">
+                                </button>
+                                <button class="trust__button trust__button--next swiper-button swiper-button--next" type="button">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__panel trust-thanks">
+                        <div class="trust__swiper swiper">
+                            <ul class="trust__items swiper-wrapper">
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/1.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/1.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/1.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/1.png" alt="Сертификат 1" width="280" height="360" loading="lazy">
+        </picture>
     </a>
-    
-    <span class="bit-card__bg" style="background-image: url('img/home-page/about-bit/1.svg');" aria-hidden> </span>
 </article>
-            </li>
-        </ul>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/2.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/2.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/2.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/2.png" alt="Сертификат 2" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/3.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/3.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/3.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/3.png" alt="Сертификат 3" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/4.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/4.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/4.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/4.png" alt="Сертификат 4" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/5.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/5.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/5.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/5.png" alt="Сертификат 5" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/1.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/1.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/1.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/1.png" alt="Сертификат 1" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/2.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/2.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/2.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/2.png" alt="Сертификат 2" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/3.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/3.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/3.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/3.png" alt="Сертификат 3" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/4.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/4.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/4.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/4.png" alt="Сертификат 4" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                                <li class="trust__item swiper-slide">
+                                    <article class="thank-card">
+    <a class="thank-card__link" href="img/home-page/trust/thanks/5.png" data-fancybox="trust-thanks">
+        <picture>
+            <source srcset="img/home-page/trust/thanks/5.avif" type="image/avif">
+            <source srcset="img/home-page/trust/thanks/5.webp" type="image/webp">
+            <img class="thank-card__img" src="img/home-page/trust/thanks/5.png" alt="Сертификат 5" width="280" height="360" loading="lazy">
+        </picture>
+    </a>
+</article>
+                                </li>
+                            </ul>
+                            <div class="trust__scrollbar swiper-scrollbar"></div>
+                            <div class="trust__buttons">
+                                <button class="trust__button trust__button--prev swiper-button swiper-button--prev" type="button">
+                                </button>
+                                <button class="trust__button trust__button--next swiper-button swiper-button--next" type="button">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
     <section class="equipment section">
@@ -688,7 +1015,7 @@
                         </div>
                         <div class="form__item">
                             <label class="sr-only" for="contacts-phone">Введите ваше имя</label>
-                            <input class="form__field" id="contacts-phone" name="contacts-phone" type="tel" placeholder="+7 (_ _ _ ) - _ _ _ - _ _ - _ _" required>
+                            <input class="form__field" id="contacts-phone" name="contacts-phone" type="tel" placeholder="+7 (___) ___-__-__" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                         </div>
                         <button class="form__button button" type="submit">
                             Оставить заявку
@@ -789,7 +1116,12 @@
                     <a class="contacts__link contacts__link--place" href="#">Расторгуевски пер. Д1</a>
                 </div>
                 <div class="navigation__column navigation__column--buttons">
-                    <a class="navigation__link button" href="#">Оставить заявку</a>
+                    <div class="contacts-icon">
+                        <a class="navigation__link button" href="#">Оставить заявку</a>
+                        <a class="contacts-icon__link contacts-icon__link--border contacts-icon__link--phone" href="tel:+7(965)3967118">
+                            <span class="sr-only">+7 (965) - 396-71-18</span>
+                        </a>
+                    </div>
                     <div class="call call--whatsapp">
                         <a class="call__whatsapp" href="#" aria-label="whatsapp">
                             <svg xmlns="http://www.w3.org/2000/svg">
