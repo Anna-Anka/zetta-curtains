@@ -28,8 +28,8 @@
                 <div class="header-top__wrapper">
                     <span class="header-top__name">Студия текстильного декора</span>
                     <div class="contacts">
-                        <span class="contacts__link contacts__link--place">Расторгуевски пер. Д1</span>
-                        <a class="contacts__link contacts__link--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
+                        <span class="contacts__info contacts__info--place">Расторгуевски пер. Д1</span>
+                        <a class="contacts__info contacts__info--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
                     </div>
                 </div>
             </div>
@@ -172,18 +172,18 @@
                     </div>
                     <div class="navigation__list">
                         <div class="navigation__column contacts">
-                            <a class="contacts__link contacts__link--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
-                            <a class="contacts__link contacts__link--place" href="#">Расторгуевски пер. Д1</a>
+                            <a class="contacts__info contacts__info--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
+                            <span class="contacts__info contacts__info--place">Расторгуевски пер. Д1</span>
                         </div>
                         <div class="navigation__column navigation__column--buttons">
                             <a class="navigation__link button" href="#" data-menu-link>Оставить заявку</a>
-                            <div class="navigation__call call call--whatsapp">
-                                <a class="call__icon" href="tel:+7(965)3967118" aria-hidden></a>
+                            <a class="navigation__call call call--all" href="tel:+7(965)3967118">
+                                <span class="call__icon" aria-hidden></span>
                                 <div class="call__content">
-                                    <a class="call__phone" href="tel:+7(965)3967118">+7 (965) - 396-71-18</a>
+                                    <span class="call__phone">+7 (965) - 396-71-18</span>
                                     <span class="call__subtext">Без выходных</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -230,14 +230,14 @@
                     </p>
                 </div>
                 <div class="hero__actions">
-                    <a class="hero__link button" href="#">Оставить заявку</a>
-                    <div class="hero__call call">
+                    <a class="hero__link button" href="#" data-goto="#contacts">Оставить заявку</a>
+                    <a class="call call--all" href="tel:+7(965)3967118">
                         <span class="call__icon" aria-hidden></span>
                         <div class="call__content">
-                            <a class="call__phone" href="tel:+7(965)3967118">+7 (965) - 396-71-18</a>
+                            <span class="call__phone">+7 (965) - 396-71-18</span>
                             <span class="call__subtext">Без выходных</span>
                         </div>
-                    </div>
+                    </a>
                     <a class="hero__whatsapp whatsapp" href="#">
                         Связаться в
                         <svg class="whatsapp__icon" xmlns="http://www.w3.org/2000/svg">
@@ -258,17 +258,19 @@
             </div>
             <div class="hero__image">
                 <span class="hero__bg" style="background-image: url('img/home-page/hero-bg.jpg');" aria-hidden> </span>
-                <a class="hero__whatsapp-icon whatsapp-icon" href="#" aria-label="Связться в whatsapp"></a>
+                <div class="contacts-icon">
+                    <a class="contacts-icon__link contacts-icon__link--whatsapp" href="#" aria-label="Связться в whatsapp"></a>
+                </div>
             </div>
             <div class="hero__actions hero__actions--mobile">
                 <a class="hero__link button" href="#">Оставить заявку</a>
-                <div class="hero__call call">
+                <a class="call call--all" href="tel:+7(965)3967118">
                     <span class="call__icon" aria-hidden></span>
                     <div class="call__content">
-                        <a class="call__phone" href="tel:+7(965)3967118">+7 (965) - 396-71-18</a>
+                        <span class="call__phone">+7 (965) - 396-71-18</span>
                         <span class="call__subtext">Без выходных</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -376,7 +378,7 @@
         </div>
     </div>
 </section>
-    <section class="services section">
+    <section class="services">
     <div class="container">
         <div class="services__wrapper">
             <h2 class="services__title title">
@@ -476,7 +478,7 @@
 </article>
                     </li>
                 </ul>
-                <a class="link" href="#">
+                <a class="services__link link" href="#">
                     Подробнее
                     <svg class="link__icon" aria-hidden>
                         <use xlink:href="img/sprite.svg#arrow">
@@ -556,7 +558,7 @@
                 <span class="head__subtitle title__subtitle">
                     Главные факты компании
                 </span>
-                <h2>О компании</h2>
+                <h2 class="head__heading">О компании</h2>
             </div>
             <div class="head__text">
                 <p>
@@ -619,7 +621,7 @@
                     <span class="head__subtitle title__subtitle">
                         Дополнительные преимущества
                     </span>
-                    <h2>Еще немного о компании</h2>
+                    <h2 class="head__heading">Еще немного о компании</h2>
                 </div>
             </div>
             <ul class="content about-bit__items">
@@ -683,7 +685,7 @@
                 <span class="head__subtitle title__subtitle">
                     Отзывы
                 </span>
-                <h2>Нам доверяют</h2>
+                <h2 class="head__heading">Нам доверяют</h2>
             </div>
         </div>
         <div class="trust__wrapper">
@@ -958,7 +960,7 @@
         </div>
     </div>
 </section>
-    <section class="equipment section">
+    <section class="equipment">
     <div class="container">
         <div class="equipment__wrapper">
             <div class="equipment__content">
@@ -971,7 +973,7 @@
                         Занимаемся комплексным оснащением интерьера текстилем. Мы предлагаем не только шторы и солнцезащитные системы, но и ковры, постельное белье и множество других аксессуаров. Мы сотрудничаем с ведущими производителями, чтобы предоставить нашим клиентам широкий выбор качественных и стильных товаров для их дома или офиса. Мы с удовольствием поможем вам создать уютную атмосферу и оформить ваш интерьер в соответствии с вашими предпочтениями и потребностями.
                     </p>
                 </div>
-                <a class="link" href="#">
+                <a class="equipment__link link" href="#">
                     Показать все услуги
                     <svg class="link__icon" aria-hidden>
                         <use xlink:href="img/sprite.svg#arrow">
@@ -989,7 +991,7 @@
         </div>
     </div>
 </section>
-    <section class="contacts-block">
+    <section class="contacts-block" id="contacts">
     <div class="container">
         <h2 class="sr-only">
             Контакты
@@ -1029,30 +1031,30 @@
                         <h4 class="contacts-block__subtitle">
                             Остались вопросы?
                         </h4>
-                        <ul>
-                            <li class="contacts-block__item">
+                        <div>
+                            <div class="contacts-block__item">
                                 <span class="contacts-block__icon contacts-block__icon--phone" aria-hidden></span>
                                 <div>
-                                    <a class="contacts-block__link" href="+7(965)3967118">
+                                    <a class="contacts-block__link" href="tel:+7(965)3967118">
                                         +7 (965) - 396-71-18
                                     </a>
                                     <span class="contacts-block__subtext">
                                         Без выходных
                                     </span>
                                 </div>
-                            </li>
-                            <li class="contacts-block__item">
+                            </div>
+                            <div class="contacts-block__item">
                                 <span class="contacts-block__icon contacts-block__icon--pin" aria-hidden></span>
                                 <div>
-                                    <a class="contacts-block__link" href="#">
+                                    <span class="contacts-block__link">
                                         Расторгуевски пер. Д1
-                                    </a>
+                                    </span>
                                     <span class="contacts-block__subtext">
                                         Салон магазина Zetta
                                     </span>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1112,12 +1114,12 @@
             </div>
             <div class="navigation__list">
                 <div class="navigation__column contacts">
-                    <a class="contacts__link contacts__link--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
-                    <a class="contacts__link contacts__link--place" href="#">Расторгуевски пер. Д1</a>
+                    <a class="contacts__info contacts__info--email" href="mailto:shtory@zetta.ru">shtory@zetta.ru</a>
+                    <span class="contacts__info contacts__info--place">Расторгуевски пер. Д1</span>
                 </div>
                 <div class="navigation__column navigation__column--buttons">
                     <div class="contacts-icon">
-                        <a class="navigation__link button" href="#">Оставить заявку</a>
+                        <a class="navigation__link button" href="#" data-goto="#contacts">Оставить заявку</a>
                         <a class="contacts-icon__link contacts-icon__link--border contacts-icon__link--phone" href="tel:+7(965)3967118">
                             <span class="sr-only">+7 (965) - 396-71-18</span>
                         </a>
