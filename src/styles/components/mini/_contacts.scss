@@ -1,7 +1,8 @@
 .contacts {
-	&__link {
+	&__info {
 		position: relative;
 		padding: 2px 0 2px 28px;
+		outline: 0;
 		transition: color 0.3s, box-shadow 0.3s;
 
 		&:focus-visible {

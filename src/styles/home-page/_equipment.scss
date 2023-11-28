@@ -1,6 +1,6 @@
 .equipment {
 	@include adaptive-value-base('padding-top', 120, 80, 1);
-	@include adaptive-value-base('padding-bottom', 160, 80, 1);
+	@include adaptive-value-base('padding-bottom', 80, 40, 1);
 
 	&__wrapper {
 		@include flex-normal(normal, space-between);
@@ -34,6 +34,10 @@
 				@include adaptive-value-base('margin-bottom', 15, 5, 1);
 			}
 		}
+	}
+
+	&__link {
+		max-width: max-content;
 	}
 
 	&__images {

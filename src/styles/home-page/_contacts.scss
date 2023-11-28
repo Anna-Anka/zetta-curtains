@@ -1,4 +1,5 @@
 .contacts-block {
+	@include adaptive-value-base('padding-top', 80, 40, 1);
 	@include adaptive-value-base('padding-bottom', 160, 80, 1);
 
 	&__wrapper {
@@ -47,6 +48,7 @@
 
 	&__title {
 		@include adaptive-value-base('margin-bottom', 15, 5, 1);
+		color: var(--color-white);
 	}
 
 	&__inner {

@@ -9,6 +9,8 @@
 		position: relative;
 		display: block;
 		border-radius: 50%;
+		outline: 0;
+		transition: background-color 0.3s, box-shadow 0.3s;
 
 		&::before {
 			@include adaptive-value-base('width', 22, 16, 1);
@@ -24,6 +26,16 @@
 		&--phone {
 			background-color: var(--color-orange-500);
 
+			&:focus-visible {
+				box-shadow: 0 0 0 2px var(--color-green-300);
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: var(--color-orange-400);
+				}
+			}
+
 			&::before {
 				background-image: url('../img/icons/phone.svg');
 			}
@@ -31,6 +43,16 @@
 
 		&--whatsapp {
 			background-color: var(--color-green-300);
+
+			&:focus-visible {
+				box-shadow: 0 0 0 2px var(--color-orange-500);
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: var(--color-green-250);
+				}
+			}
 
 			&::before {
 				background-image: url('../img/icons/whatsapp.svg');
@@ -45,6 +67,17 @@
 				&::before {
 					filter: invert(27%) sepia(95%) saturate(5898%) hue-rotate(358deg)
 						brightness(99%) contrast(102%);
+					transition: transform 0.3s;
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						background-color: transparent;
+
+						&::before {
+							transform: scale(1.1) translate(-50%, -50%);
+						}
+					}
 				}
 			}
 		}

@@ -1,4 +1,5 @@
 .stages {
+	@include adaptive-value-base('padding-top', 80, 40, 1);
 	@include adaptive-value-base('padding-bottom', 90, 60, 1);
 
 	.container {

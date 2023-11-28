@@ -9,11 +9,11 @@
 		padding: 5px;
 		background-color: var(--color-orange-500);
 		border-radius: 6px;
-	}
-
-	&:focus-visible {
 		outline: 0;
-		box-shadow: 0 0 0 2px var(--color-orange-500);
+
+		&:focus-visible {
+			box-shadow: 0 0 0 2px var(--color-green-300);
+		}
 	}
 
 	&__img {

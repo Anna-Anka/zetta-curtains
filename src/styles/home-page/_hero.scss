@@ -58,14 +58,9 @@
 		}
 	}
 
-	&__call {
+	.call {
 		padding-top: 15px;
 		padding-bottom: 15px;
-
-		@include mq(sm) {
-			padding-top: 12px;
-			padding-bottom: 12px;
-		}
 	}
 
 	&__whatsapp {
@@ -94,7 +89,7 @@
 		border-radius: inherit;
 	}
 
-	&__whatsapp-icon {
+	.contacts-icon {
 		position: absolute;
 		right: 0;
 		bottom: 0;

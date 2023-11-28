@@ -1,6 +1,6 @@
 .services {
 	@include adaptive-value-base('padding-top', 120, 80, 1);
-	@include adaptive-value-base('padding-bottom', 160, 80, 1);
+	@include adaptive-value-base('padding-bottom', 80, 40, 1);
 
 	&__title {
 		grid-area: title;
@@ -38,5 +38,9 @@
 
 	&__items {
 		@include adaptive-value-base('margin-bottom', 40, 16, 1);
+	}
+
+	&__link {
+		max-width: max-content;
 	}
 }

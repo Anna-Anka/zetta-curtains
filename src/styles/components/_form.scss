@@ -40,7 +40,12 @@
 
 		a {
 			color: var(--color-white);
+			outline: 0;
 			transition: color 0.3s;
+
+			&:focus-visible {
+				box-shadow: 0 0 0 2px var(--color-orange-500);
+			}
 
 			@media (any-hover: hover) {
 				&:hover {
