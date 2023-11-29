@@ -1,28 +1,7 @@
-@import './components/header/header';
-@import './components/header/burger-button';
-@import './components/header/burger-menu';
+@import './components/menu';
+@import './components/header';
 @import './components/form';
+@import './components/navigation';
 @import './components/footer';
-@import './components/form';
-
-@import './components/mini/logo';
-@import './components/mini/button';
-@import './components/mini/call';
-@import './components/mini/link';
-@import './components/mini/head';
-@import './components/mini/title';
-@import './components/mini/whatsapp';
-@import './components/mini/whatsapp-icon';
-@import './components/mini/contacts';
-@import './components/mini/contacts-icon';
-
-@import './components/mini/swiper/swiper-button';
-@import './components/mini/swiper/swiper-scrollbar';
-
-@import './components/cards/portfolio-card';
-@import './components/cards/service-name-card';
-@import './components/cards/stage-card';
-@import './components/cards/about-card';
-@import './components/cards/about-bit-card';
-@import './components/cards/review-card';
-@import './components/cards/thanks-card';
+@import './components/mini';
+@import './components/cards';

@@ -6,7 +6,7 @@
 		@include adaptive-value-base('border-radius', 15, 10, 1);
 		width: 100%;
 		object-fit: cover;
-		box-shadow: 16px 3px 32px 0 rgba(0, 0, 0, 0.04);
+		box-shadow: 16px 3px 32px 0 rgba($color-black, 0.04);
 		&:not(:last-child) {
 			margin-bottom: 10px;
 		}

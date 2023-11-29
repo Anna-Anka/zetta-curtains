@@ -93,8 +93,7 @@
 	}
 
 	&__bg {
-		@include resize-img;
-		border-radius: 20px;
 		@include adaptive-value-base('border-radius', 20, 15, 1);
+		@include resize-img;
 	}
 }

@@ -56,29 +56,6 @@ body {
 	overflow: hidden;
 }
 
-.menu {
-	&__link {
-		display: flex;
-		gap: 10px;
-		align-items: center;
-		padding: 2px 0;
-		font-size: 15px;
-		line-height: 1;
-
-		@media (any-hover: hover) {
-			&:hover {
-				border-color: var(--color-orange-500);
-			}
-		}
-	}
-
-	&__icon {
-		@include adaptive-value-base('width', 20, 14, 1);
-		@include adaptive-value-base('height', 20, 14, 1);
-		@include bg;
-	}
-}
-
 .content {
 	display: flex;
 	overflow-x: auto;

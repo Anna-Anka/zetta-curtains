@@ -1,0 +1,94 @@
+.header-bottom {
+	position: relative;
+	z-index: 60;
+	padding: 25px 0;
+	background-color: var(--color-white);
+	border-radius: 0 0 40px 40px;
+
+	@include mq(lg) {
+		box-shadow: 16px 3px 32px 0 rgba($color-black, 0.04),
+			0 0 30px 0 rgba($color-black, 0.08);
+	}
+
+	@include mq(sm) {
+		padding: 20px 0;
+		border-radius: 0 0 25px 25px;
+	}
+
+	&__navigation {
+		@include flex-normal(center, space-between);
+		@include adaptive-value-base('gap', 20, 10, 1);
+	}
+
+	.logo {
+		&__descr {
+			display: none;
+
+			@include mq(lg) {
+				display: inline-flex;
+			}
+
+			@include mq(md) {
+				display: none;
+			}
+		}
+
+		@include mq(lg) {
+			margin-right: auto;
+		}
+	}
+
+	.call {
+		flex-shrink: 0;
+
+		@include mq(sm) {
+			display: none;
+		}
+	}
+
+	.contacts-icon {
+		display: none;
+
+		@include mq(lg) {
+			display: flex;
+		}
+	}
+
+	.menu {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		overflow-x: auto;
+
+		@include mq(lg) {
+			display: none;
+		}
+
+		&__link {
+			@include flex-normal;
+			padding: 20px 18px;
+			white-space: nowrap;
+			background-color: var(--color-grey-150);
+			border: 1px solid transparent;
+			border-radius: 6px;
+			outline: 0;
+			transition: border-color 0.3s;
+
+			&:focus-visible {
+				border-color: var(--color-green-300);
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					border-color: var(--color-orange-500);
+				}
+			}
+		}
+
+		&__icon {
+			width: 20px;
+			height: 20px;
+			@include bg;
+		}
+	}
+}

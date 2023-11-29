@@ -1,0 +1,24 @@
+.header-top {
+	padding: 10px 0;
+	background-color: var(--color-grey-150);
+
+	@include mq(lg) {
+		display: none;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		font-size: 15px;
+		line-height: 1;
+	}
+
+	&__name {
+		margin-right: auto;
+	}
+
+	.contacts {
+		@include flex-normal;
+		gap: 35px;
+	}
+}

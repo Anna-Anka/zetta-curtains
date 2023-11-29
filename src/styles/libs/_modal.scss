@@ -37,8 +37,8 @@
 		text-align: left;
 		vertical-align: middle;
 		background-color: var(--color-white);
-		box-shadow: 16px 3px 32px 0 rgba(0, 0, 0, 0.04),
-			0 0 30px 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 16px 3px 32px 0 rgba($color-black, 0.04),
+			0 0 30px 0 rgba($color-black, 0.05);
 		cursor: default;
 
 		@media (max-width: 1024px) {

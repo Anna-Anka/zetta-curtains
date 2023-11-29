@@ -19,7 +19,7 @@
 
 	&__map {
 		@include adaptive-value-base('min-height', 436, 250, 1);
-		box-shadow: 16px 3px 32px 0 rgba(0, 0, 0, 0.06);
+		box-shadow: 16px 3px 32px 0 rgba($color-black, 0.06);
 
 		div,
 		iframe {
@@ -95,7 +95,7 @@
 		@include adaptive-value-base('flex-basis', 50, 40, 1);
 		@include adaptive-value-base('height', 50, 40, 1);
 		position: relative;
-		background-color: rgba(246, 246, 246, 0.15);
+		background-color: rgba($color-grey-150, 0.15);
 		border-radius: 5px;
 
 		&--phone {

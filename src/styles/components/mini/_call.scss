@@ -85,6 +85,7 @@
 	&__icon,
 	&__whatsapp {
 		outline: 0;
+
 		&:focus-visible {
 			box-shadow: 0 0 0 1px var(--color-orange-500);
 		}

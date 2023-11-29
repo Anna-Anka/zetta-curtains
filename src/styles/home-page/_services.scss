@@ -24,8 +24,8 @@
 		grid-area: decor;
 		height: 400px;
 		border-radius: 15px;
-		box-shadow: 16px 3px 32px 0 rgba(0, 0, 0, 0.04),
-			0 0 16px 0 rgba(0, 0, 0, 0.05), 0 3px 80px 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 16px 3px 32px 0 rgba($color-black, 0.04),
+			0 0 16px 0 rgba($color-black, 0.05), 0 3px 80px 0 rgba($color-black, 0.05);
 
 		@include mq(xl) {
 			display: none;
